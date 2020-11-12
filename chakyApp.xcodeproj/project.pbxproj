@@ -3,19 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB0BC103255C59E700769FE4 /* ModelAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0BC102255C59E700769FE4 /* ModelAnimation.swift */; };
 		AB702DD6255B098900AC835D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB702DD5255B098900AC835D /* AppDelegate.swift */; };
 		AB702DD8255B098900AC835D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB702DD7255B098900AC835D /* SceneDelegate.swift */; };
 		AB702DDA255B098900AC835D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB702DD9255B098900AC835D /* ViewController.swift */; };
 		AB702DDD255B098900AC835D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB702DDB255B098900AC835D /* Main.storyboard */; };
 		AB702DDF255B098B00AC835D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB702DDE255B098B00AC835D /* Assets.xcassets */; };
 		AB702DE2255B098B00AC835D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB702DE0255B098B00AC835D /* LaunchScreen.storyboard */; };
+		D2FF7C80C7481DA2A6D62E6F /* Pods_chakyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F55502D6BF6EFA0189FAD6A /* Pods_chakyApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F55502D6BF6EFA0189FAD6A /* Pods_chakyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chakyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50AA60FA29A875E30F6BCD51 /* Pods-chakyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chakyApp.release.xcconfig"; path = "Target Support Files/Pods-chakyApp/Pods-chakyApp.release.xcconfig"; sourceTree = "<group>"; };
+		63BEA165564EBCD3830FA113 /* Pods-chakyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chakyApp.debug.xcconfig"; path = "Target Support Files/Pods-chakyApp/Pods-chakyApp.debug.xcconfig"; sourceTree = "<group>"; };
+		AB0BC102255C59E700769FE4 /* ModelAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelAnimation.swift; sourceTree = "<group>"; };
 		AB702DD2255B098900AC835D /* chakyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chakyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB702DD5255B098900AC835D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB702DD7255B098900AC835D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2FF7C80C7481DA2A6D62E6F /* Pods_chakyApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02AA69DDF1E0B3FFAB5BA800 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				63BEA165564EBCD3830FA113 /* Pods-chakyApp.debug.xcconfig */,
+				50AA60FA29A875E30F6BCD51 /* Pods-chakyApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3BCCA566A6E8B5193BCC855C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F55502D6BF6EFA0189FAD6A /* Pods_chakyApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AB702DC9255B098900AC835D = {
 			isa = PBXGroup;
 			children = (
 				AB702DD4255B098900AC835D /* chakyApp */,
 				AB702DD3255B098900AC835D /* Products */,
+				02AA69DDF1E0B3FFAB5BA800 /* Pods */,
+				3BCCA566A6E8B5193BCC855C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +85,7 @@
 				AB702DD5255B098900AC835D /* AppDelegate.swift */,
 				AB702DD7255B098900AC835D /* SceneDelegate.swift */,
 				AB702DD9255B098900AC835D /* ViewController.swift */,
+				AB0BC102255C59E700769FE4 /* ModelAnimation.swift */,
 				AB702DDB255B098900AC835D /* Main.storyboard */,
 				AB702DDE255B098B00AC835D /* Assets.xcassets */,
 				AB702DE0255B098B00AC835D /* LaunchScreen.storyboard */,
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB702DE6255B098B00AC835D /* Build configuration list for PBXNativeTarget "chakyApp" */;
 			buildPhases = (
+				9CA5A801AB54AF7C1AC0268D /* [CP] Check Pods Manifest.lock */,
 				AB702DCE255B098900AC835D /* Sources */,
 				AB702DCF255B098900AC835D /* Frameworks */,
 				AB702DD0255B098900AC835D /* Resources */,
+				97C0E4A080657980F6F5466A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,11 +161,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		97C0E4A080657980F6F5466A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-chakyApp/Pods-chakyApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-chakyApp/Pods-chakyApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-chakyApp/Pods-chakyApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CA5A801AB54AF7C1AC0268D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-chakyApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AB702DCE255B098900AC835D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB0BC103255C59E700769FE4 /* ModelAnimation.swift in Sources */,
 				AB702DDA255B098900AC835D /* ViewController.swift in Sources */,
 				AB702DD6255B098900AC835D /* AppDelegate.swift in Sources */,
 				AB702DD8255B098900AC835D /* SceneDelegate.swift in Sources */,
@@ -283,6 +355,7 @@
 		};
 		AB702DE7255B098B00AC835D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63BEA165564EBCD3830FA113 /* Pods-chakyApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,12 +368,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = hw.chakyApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		AB702DE8255B098B00AC835D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50AA60FA29A875E30F6BCD51 /* Pods-chakyApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -313,7 +387,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = hw.chakyApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
