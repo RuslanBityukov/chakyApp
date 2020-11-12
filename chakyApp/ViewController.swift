@@ -15,7 +15,6 @@ class ViewController: UIViewController {
     @IBOutlet var springLabel: UILabel!
     @IBOutlet var springAnimationView: SpringView!
     
-    var animation: Animation!
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
@@ -49,3 +48,7 @@ class ViewController: UIViewController {
         
     }
 }
+
+
+
+
