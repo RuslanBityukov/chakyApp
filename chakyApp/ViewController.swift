@@ -15,7 +15,6 @@ class ViewController: UIViewController {
     @IBOutlet var springLabel: UILabel!
     @IBOutlet var springAnimationView: SpringView!
     
-    
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         setLabel()
